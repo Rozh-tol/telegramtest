@@ -30,56 +30,56 @@ function rps(choice) {
   let scissors = arr[2]
   let result = Math.floor(Math.random() * arr.length);
   if (arr[result] === 'rock' && choice === 'scissors') {
-    gameResult.textContent = `YOU LOSE :(`
+    gameResult.textContent = `ТЫ ПРОИГРАЛ :(`
     gameResult.classList.remove('hidden')
     playAgain.classList.remove('hidden');
    /*  console.log(`Вы проиграли, компьютер вырал ${arr[result]}`) */
     return aiRockBtn.classList.remove('swiped-up')
   }
   if (arr[result] === 'rock' && choice === 'paper') {
-    gameResult.textContent = `YOU WON!`
+    gameResult.textContent = `ТЫ ПОБЕДИЛ!`
     gameResult.classList.remove('hidden');
     playAgain.classList.remove('hidden');
     /* console.log(`Вы выйграли, компьютер выбрал ${arr[result]}`) */
     return aiRockBtn.classList.remove('swiped-up')
   }
   if (arr[result] === 'paper' && choice === 'scissors') {
-    gameResult.textContent = `YOU WON!`
+    gameResult.textContent = `ТЫ ПОБЕДИЛ!`
     gameResult.classList.remove('hidden');
     playAgain.classList.remove('hidden');
   /*   console.log(`Вы выйграли, компьютер выбрал ${arr[result]}`) */
     return aiPaperBtn.classList.remove('swiped-up')
   }
   if (arr[result] === 'paper' && choice === 'rock') {
-    gameResult.textContent = `YOU LOSE :(`
+    gameResult.textContent = `ТЫ ПРОИГРАЛ :(`
     gameResult.classList.remove('hidden');
     playAgain.classList.remove('hidden');
   /*   console.log(`Вы проиграли, компьютер вырал ${arr[result]}`) */
     return aiPaperBtn.classList.remove('swiped-up')
   }
     if (arr[result] === 'scissors' && choice === 'paper') {
-      gameResult.textContent = `YOU LOSE :(`
+      gameResult.textContent = `ТЫ ПРОИГРАЛ :(`
       gameResult.classList.remove('hidden');
       playAgain.classList.remove('hidden');
 /*     console.log(`Вы проиграли, компьютер вырал ${arr[result]}`) */
     return aiScissorsBtn.classList.remove('swiped-up')
   }
   if (arr[result] === 'scissors' && choice === 'rock') {
-    gameResult.textContent = `YOU WON!`
+    gameResult.textContent = `ТЫ ПОБЕДИЛ!`
     gameResult.classList.remove('hidden');
     playAgain.classList.remove('hidden');
 /*     console.log(`Вы выйграли, компьютер выбрал ${arr[result]}`) */
     return aiScissorsBtn.classList.remove('swiped-up')
   }
   if (arr[result] === 'scissors' && choice === 'scissors') {
-    gameResult.textContent = `IT'S A DRAW`
+    gameResult.textContent = `НИЧЬЯ`
     gameResult.classList.remove('hidden');
     playAgain.classList.remove('hidden');
 /*     console.log(`Ничья!`) */
     return aiScissorsBtn.classList.remove('swiped-up')
   }
   if (arr[result] === 'rock' && choice === 'rock') {
-    gameResult.textContent = `IT'S A DRAW`
+    gameResult.textContent = `НИЧЬЯ`
     gameResult.classList.remove('hidden');
     playAgain.classList.remove('hidden');
   /*   console.log(`Ничья!`) */
@@ -87,7 +87,7 @@ function rps(choice) {
   }
   if (arr[result] === 'paper' && choice === 'paper') {
   /*   console.log(`Ничья!`) */
-  gameResult.textContent = `IT'S A DRAW`
+  gameResult.textContent = `НИЧЬЯ`
   gameResult.classList.remove('hidden');
   playAgain.classList.remove('hidden');
     return aiPaperBtn.classList.remove('swiped-up')
